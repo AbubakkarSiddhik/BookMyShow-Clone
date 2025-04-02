@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard - BookMyShow Clone</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="style.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i0.wp.com/nasheman.in/wp-content/uploads/2017/03/bookmyshow..png?resize=600%2C228" 
+                     alt="BookMyShow" 
+                     class="brand-logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+           
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="fas fa-home me-1"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="movies.html">
+                            <i class="fas fa-film me-1"></i> Movies
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">
+                            <i class="fas fa-calendar-alt me-1"></i> Events
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="theater.html">
+                            <i class="fas fa-map-marker-alt me-1"></i> Theaters
+                        </a>
+                    </li>
+                </ul>
+                
+               
+                <div class="d-flex align-items-center">
+                    <div class="dropdown">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" 
+                           id="dropdownUser" data-bs-toggle="dropdown">
+                            <img src="https://www.pngitem.com/pimgs/m/404-4042710_circle-profile-picture-png-transparent-png.png" alt="User" width="32" height="32" class="rounded-circle me-2">
+                            <span>John Doe</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                            <li><a class="dropdown-item active" href="dashboard.html">Dashboard</a></li>
+                            <li><a class="dropdown-item" href="booking.html">My Bookings</a></li>
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="index.html">Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+          
+                <div class="col-lg-3 mb-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="img/user-avatar.jpg" alt="User" class="rounded-circle mb-3" width="100" height="100">
+                            <h4 class="mb-1">John Doe</h4>
+                            <p class="text-muted mb-3">john.doe@example.com</p>
+                            <div class="d-grid gap-2">
+                                <a href="profile.html" class="btn btn-outline-danger">Edit Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mt-4">
+                        <div class="list-group list-group-flush">
+                            <a href="dashboard.html" class="list-group-item list-group-item-action active">
+                                <i class="fas fa-tachometer-alt me-2"></i>Dashboard
+                            </a>
+                            <a href="bookings.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-ticket-alt me-2"></i>My Bookings
+                            </a>
+                            <a href="wallet.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-wallet me-2"></i>Wallet
+                            </a>
+                            <a href="wishlist.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-heart me-2"></i>Wishlist
+                            </a>
+                            <a href="notifications.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-bell me-2"></i>Notifications
+                            </a>
+                            <a href="settings.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-cog me-2"></i>Settings
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-lg-9">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="fw-bold mb-0">My Dashboard</h2>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" 
+                                    id="durationDropdown" data-bs-toggle="dropdown">
+                                Last 30 Days
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="dashboard.html?duration=week">Last 7 Days</a></li>
+                                <li><a class="dropdown-item active" href="dashboard.html?duration=month">Last 30 Days</a></li>
+                                <li><a class="dropdown-item" href="dashboard.html?duration=year">Last Year</a></li>
+                                <li><a class="dropdown-item" href="dashboard.html?duration=all">All Time</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-4 mb-3">
+                            <div class="card bg-primary text-white">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h6 class="text-uppercase">Bookings</h6>
+                                            <h3 class="mb-0">12</h3>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fas fa-ticket-alt fa-2x opacity-50"></i>
+                                        </div>
+                                    </div>
+                                    <p class="small mb-0">
+                                        <i class="fas fa-arrow-up me-1"></i> 2 new this week
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card bg-success text-white">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h6 class="text-uppercase">Wallet Balance</h6>
+                                            <h3 class="mb-0">₹1,250</h3>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fas fa-wallet fa-2x opacity-50"></i>
+                                        </div>
+                                    </div>
+                                    <p class="small mb-0">
+                                        <a href="wallet.html" class="text-white">Add Money</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card bg-danger text-white">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h6 class="text-uppercase">Reward Points</h6>
+                                            <h3 class="mb-0">1,450</h3>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fas fa-star fa-2x opacity-50"></i>
+                                        </div>
+                                    </div>
+                                    <p class="small mb-0">
+                                        <a href="rewards.html" class="text-white">Redeem Now</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="card mb-4">
+                        <div class="card-header bg-light">
+                            <h5 class="mb-0">
+                                <i class="fas fa-ticket-alt me-2"></i>Upcoming Bookings
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Movie/Event</th>
+                                            <th>Date & Time</th>
+                                            <th>Venue</th>
+                                            <th>Seats</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/avengers-end-game-et00090482-07-12-2018-06-50-21.jpg" alt="Movie" width="50" class="rounded me-3">
+                                                    <div>
+                                                        <h6 class="mb-0">Avengers: Endgame</h6>
+                                                        <small class="text-muted">2D Dolby Atmos</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <div>Sat, 10 Jun 2023</div>
+                                                    <small class="text-muted">2:30 PM</small>
+                                                </div>
+                                            </td>
+                                            <td>PVR Forum Mall</td>
+                                            <td>G12, G13</td>
+                                            <td>
+                                                <a href="booking-details.html" class="btn btn-sm btn-outline-primary">View</a>
+                                                <a href="cancel-booking.html" class="btn btn-sm btn-outline-danger">Cancel</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="https://www.ncpamumbai.com/wp-content/uploads/2024/08/NCPA-International-Jazz-Festival-2024-2.jpg" alt="Event" width="50" class="rounded me-3">
+                                                    <div>
+                                                        <h6 class="mb-0">International Jazz Festival</h6>
+                                                        <small class="text-muted">Music Concert</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <div>Sun, 18 Jun 2023</div>
+                                                    <small class="text-muted">7:00 PM</small>
+                                                </div>
+                                            </td>
+                                            <td>Palace Grounds</td>
+                                            <td>VIP-05</td>
+                                            <td>
+                                                <a href="booking-details.html" class="btn btn-sm btn-outline-primary">View</a>
+                                                <a href="cancel-booking.html" class="btn btn-sm btn-outline-danger">Cancel</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="text-center mt-3">
+                                <a href="booking.html" class="btn btn-danger">View All Bookings</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4">
+                        <div class="card-header bg-light">
+                            <h5 class="mb-0">
+                                <i class="fas fa-history me-2"></i>Recently Viewed
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3 mb-3">
+                                    <div class="card h-100">
+                                        <img src="https://assets-in.bmscdn.com/iedb/movies/images/extra/vertical_logo/mobile/thumbnail/xxlarge/the-super-mario-bros-movie-et00343051-1686571962.jpg" class="card-img-top" alt="The Super Mario Bros. Movie">
+                                        <div class="card-body">
+                                            <h6 class="card-title">The Super Mario Bros. Movie</h6>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="badge bg-success">4.0/5</span>
+                                                <a href="booking.html" class="btn btn-sm btn-danger">Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="card h-100">
+                                        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/pathaan-et00323848-1674372556.jpg" class="card-img-top" alt="Pathaan">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Pathaan</h6>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="badge bg-success">3.9/5</span>
+                                                <a href="booking.html" class="btn btn-sm btn-danger">Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="card h-100">
+                                        <img src="https://i.pinimg.com/736x/ec/55/55/ec55554d76876650c584664038309c07.jpg" class="card-img-top" alt="Standup Comedy Night">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Standup Comedy Night</h6>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="badge bg-success">4.2/5</span>
+                                                <a href="booking.html" class="btn btn-sm btn-danger">Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="card h-100">
+                                        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/guardians-of-the-galaxy-vol-3-et00310794-1683529214.jpg" class="card-img-top" alt="Guardians of the Galaxy Vol. 3">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Guardians of the Galaxy Vol. 3</h6>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="badge bg-warning text-dark">Coming Soon</span>
+                                                <button class="btn btn-sm btn-outline-danger" disabled>Notify Me</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                 
+                    <div class="card">
+                        <div class="card-header bg-light">
+                            <h5 class="mb-0">
+                                <i class="fas fa-thumbs-up me-2"></i>Recommended For You
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3 mb-3">
+                                    <div class="card h-100">
+                                        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/ant-man-and-the-wasp-quantumania-et00302402-1674555096.jpg" class="card-img-top" alt="Ant-Man and the Wasp: Quantumania">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Ant-Man and the Wasp: Quantumania</h6>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="badge bg-success">3.7/5</span>
+                                                <a href="booking.html" class="btn btn-sm btn-danger">Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="card h-100">
+                                        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/avatar-the-way-of-water-et00037264-1670850986.jpg" class="card-img-top" alt="Avatar: The Way of Water">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Avatar: The Way of Water</h6>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="badge bg-success">4.3/5</span>
+                                                <a href="booking.html" class="btn btn-sm btn-danger">Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="card h-100">
+                                        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/kantara-a-legend-chapter-1-et00377351-1701090949.jpg" class="card-img-top" alt="Kantara">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Kantara</h6>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="badge bg-success">4.6/5</span>
+                                                <a href="booking.html" class="btn btn-sm btn-danger">Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="card h-100">
+                                        <img src="https://assets-in.bmscdn.com/iedb/movies/images/extra/vertical_logo/mobile/thumbnail/xxlarge/puss-in-boots-the-last-wish-et00046641-1678340776.jpg" class="card-img-top" alt="Puss in Boots: The Last Wish">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Puss in Boots: The Last Wish</h6>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="badge bg-success">4.1/5</span>
+                                                <a href="booking.html" class="btn btn-sm btn-danger">Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5>BookMyShow</h5>
+                    <p>Your one-stop destination for all entertainment needs.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-white">FAQ</a></li>
+                        <li><a href="#" class="text-white">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Download App</h5>
+                    <div class="app-download">
+                        <a href="https://play.google.com/" class="d-block mb-2">
+                            <img src="https://freelogopng.com/images/all_img/1664285914google-play-logo-png.png" alt="Google Play" class="img-fluid" style="height: 36px;
+                            width: auto;
+                            transition: transform 0.3s ease;">
+                        </a>
+                        <a href="https://www.apple.com/in/app-store/">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/1200px-App_Store_%28iOS%29.svg.png" alt="App Store" class="img-fluid" style="height: 36px;
+                            width: auto;
+                            transition: transform 0.3s ease;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 BookMyShow Clone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

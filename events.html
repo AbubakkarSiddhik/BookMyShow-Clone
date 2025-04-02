@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - BookMyShow Clone</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+    <link href="style.css" rel="stylesheet">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i0.wp.com/nasheman.in/wp-content/uploads/2017/03/bookmyshow..png?resize=600%2C228" 
+                     alt="BookMyShow" 
+                     class="brand-logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+           
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">
+                            <i class="fas fa-home me-1"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="movies.html">
+                            <i class="fas fa-film me-1"></i> Movies
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="events.html">
+                            <i class="fas fa-calendar-alt me-1"></i> Events
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="theater.html">
+                            <i class="fas fa-map-marker-alt me-1"></i> Theaters
+                        </a>
+                    </li>
+                </ul>
+                
+               
+                <div class="d-flex align-items-center">
+                    <a href="login.html" class="btn btn-outline-light me-2 px-3 py-2 auth-btn">
+                        <i class="fas fa-sign-in-alt me-1"></i> Sign In
+                    </a>
+                    <a href="register.html" class="btn btn-danger px-3 py-2 auth-btn">
+                        <i class="fas fa-user-plus me-1"></i> Sign Up
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="fw-bold mb-0">Events & Plays</h1>
+                <div>
+                    <a href="#locationModal" class="btn btn-secondary" data-bs-toggle="modal">
+                        <i class="fas fa-map-marker-alt me-2"></i>Bengaluru
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="py-3 border-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex overflow-auto">
+                        <div class="d-flex flex-nowrap">
+                            <a href="events.html?category=all" class="btn btn-outline-secondary rounded-pill me-2">All Events</a>
+                            <a href="events.html?category=comedy" class="btn btn-outline-secondary rounded-pill me-2">Comedy Shows</a>
+                            <a href="events.html?category=music" class="btn btn-outline-secondary rounded-pill me-2">Music Concerts</a>
+                            <a href="events.html?category=theatre" class="btn btn-outline-secondary rounded-pill me-2">Plays & Theatre</a>
+                            <a href="events.html?category=sports" class="btn btn-outline-secondary rounded-pill me-2">Sports</a>
+                            <a href="events.html?category=workshops" class="btn btn-outline-secondary rounded-pill me-2">Workshops</a>
+                            <a href="events.html?category=exhibitions" class="btn btn-outline-secondary rounded-pill me-2">Exhibitions</a>
+                            <a href="events.html?category=meetups" class="btn btn-outline-secondary rounded-pill">Meetups</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="py-5">
+        <div class="container">
+ 
+            <div class="mb-5">
+                <h2 class="fw-bold mb-4">Featured Events</h2>
+                <div class="row">
+          
+                    <div class="col-md-4 mb-4">
+                        <div class="card event-card h-100">
+                            <div class="position-relative">
+                                <img src="https://i.pinimg.com/736x/ec/55/55/ec55554d76876650c584664038309c07.jpg" class="card-img-top" alt="Standup Comedy Night">
+                                <span class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 m-2 rounded">
+                                    Featured
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Standup Comedy Night</h5>
+                                <p class="card-text text-muted mb-2">
+                                    <i class="fas fa-calendar-alt me-2"></i>Sat, 10 Jun 2023
+                                </p>
+                                <p class="card-text text-muted mb-2">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Comedy Club, Bengaluru
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="text-danger fw-bold">₹499 Onwards</span>
+                                    <a href="event-details.html" class="btn btn-sm btn-danger">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card event-card h-100">
+                            <div class="position-relative">
+                                <img src="https://www.ncpamumbai.com/wp-content/uploads/2024/08/NCPA-International-Jazz-Festival-2024-2.jpg" class="card-img-top" alt="International Jazz Festival">
+                                <span class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 m-2 rounded">
+                                    Featured
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">International Jazz Festival</h5>
+                                <p class="card-text text-muted mb-2">
+                                    <i class="fas fa-calendar-alt me-2"></i>Fri-Sun, 16-18 Jun 2023
+                                </p>
+                                <p class="card-text text-muted mb-2">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Palace Grounds, Bengaluru
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="text-danger fw-bold">₹1,499 Onwards</span>
+                                    <a href="event-details.html" class="btn btn-sm btn-danger">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                 
+                    <div class="col-md-4 mb-4">
+                        <div class="card event-card h-100">
+                            <div class="position-relative">
+                                <img src="https://assets.playbill.com/editorial/5702c4eea9f621260c1e34b156e61cb5-shakespeare-in-the-park.jpg" class="card-img-top" alt="Shakespeare in the Park">
+                                <span class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 m-2 rounded">
+                                    Featured
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Shakespeare in the Park</h5>
+                                <p class="card-text text-muted mb-2">
+                                    <i class="fas fa-calendar-alt me-2"></i>Every Weekend in June
+                                </p>
+                                <p class="card-text text-muted mb-2">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Cubbon Park, Bengaluru
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="text-danger fw-bold">₹799 Onwards</span>
+                                    <a href="event-details.html" class="btn btn-sm btn-danger">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+     
+            <div class="mb-5">
+                <h2 class="fw-bold mb-4">All Events</h2>
+                <div class="row">
+                  
+                    <div class="col-md-3 mb-4">
+                        <div class="card event-card h-100">
+                            <img src="https://mydesignangel.in/cdn/shop/articles/exhibition_banner_1.jpg?v=1706516835" class="card-img-top" alt="Art Exhibition">
+                            <div class="card-body">
+                                <h5 class="card-title">Contemporary Art Exhibition</h5>
+                                <p class="card-text text-muted mb-2">
+                                    <i class="fas fa-calendar-alt me-2"></i>1-30 Jun 2023
+                                </p>
+                                <p class="card-text text-muted mb-2">
+                                    <i class="fas fa-map-marker-alt me-2"></i>National Gallery, Bengaluru
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="text-danger fw-bold">₹299 Onwards</span>
+                                    <a href="event-details.html" class="btn btn-sm btn-danger">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                        <div class="card event-card h-100">
+                            <img src="https://www.al-monitor.com/sites/default/files/styles/article_hero_medium/public/2025-02/qiff-2.png?h=1c9b88c9&itok=Iu9wCZvu" class="card-img-top" alt="Food Festival">
+                            <div class="card-body">
+                                <h5 class="card-title">International Food Festival</h5>
+                                <p class="card-text text-muted mb-2">
+                                    <i class="fas fa-calendar-alt me-2"></i>17-18 Jun 2023
+                                </p>
+                                <p class="card-text text-muted mb-2">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Food Street, Bengaluru
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="text-danger fw-bold">₹199 Onwards</span>
+                                    <a href="event-details.html" class="btn btn-sm btn-danger">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                        <div class="card event-card h-100">
+                            <img src="https://www.ncnonline.net/wp-content/uploads/2023/11/Shri-Siddaramaiah-inaugurates-Bengaluru-Tech-Summit-2023-Breaking-Boundaries-Innovation-from-India-Impact-for-the-World.jpg" class="card-img-top" alt="Tech Conference">
+                            <div class="card-body">
+                                <h5 class="card-title">Tech Summit 2023</h5>
+                                <p class="card-text text-muted mb-2">
+                                    <i class="fas fa-calendar-alt me-2"></i>24-25 Jun 2023
+                                </p>
+                                <p class="card-text text-muted mb-2">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Convention Center, Bengaluru
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="text-danger fw-bold">₹2,999 Onwards</span>
+                                    <a href="event-details.html" class="btn btn-sm btn-danger">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-md-3 mb-4">
+                        <div class="card event-card h-100">
+                            <img src="https://bookretreats.com/cdn-cgi/image/width=1200,quality=65,f=auto,sharpen=1,fit=cover,gravity=auto/assets/photo/retreat/0m/29k/29688/p_1759051/1000_1706042753.jpg" class="card-img-top" alt="Yoga Workshop">
+                            <div class="card-body">
+                                <h5 class="card-title">Weekend Yoga Retreat</h5>
+                                <p class="card-text text-muted mb-2">
+                                    <i class="fas fa-calendar-alt me-2"></i>Every Sunday
+                                </p>
+                                <p class="card-text text-muted mb-2">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Peace Resort, Bengaluru
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="text-danger fw-bold">₹599 Onwards</span>
+                                    <a href="event-details.html" class="btn btn-sm btn-danger">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <nav aria-label="Page navigation" class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <span class="page-link">Previous</span>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="events.html?page=1">1</a></li>
+                    <li class="page-item"><a class="page-link" href="events.html?page=2">2</a></li>
+                    <li class="page-item"><a class="page-link" href="events.html?page=3">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="events.html?page=2">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <div class="modal fade" id="locationModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Select Your City</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="list-group">
+                        <a href="events.html?city=mumbai" class="list-group-item list-group-item-action">Mumbai</a>
+                        <a href="events.html?city=delhi" class="list-group-item list-group-item-action">Delhi</a>
+                        <a href="events.html?city=bangalore" class="list-group-item list-group-item-action active">Bengaluru</a>
+                        <a href="events.html?city=hyderabad" class="list-group-item list-group-item-action">Hyderabad</a>
+                        <a href="events.html?city=chennai" class="list-group-item list-group-item-action">Chennai</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5>BookMyShow</h5>
+                    <p>Your one-stop destination for all entertainment needs.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                        <li><a href="faq.html" class="text-white">FAQ</a></li>
+                        <li><a href="terms.html" class="text-white">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Download App</h5>
+                    <div class="app-download">
+                        <a href="https://play.google.com" class="d-block mb-2">
+                            <img src="img/google-play.png" alt="Google Play" class="img-fluid">
+                        </a>
+                        <a href="https://apple.com/appstore">
+                            <img src="img/app-store.png" alt="App Store" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 BookMyShow Clone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

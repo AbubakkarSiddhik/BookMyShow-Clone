@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i0.wp.com/nasheman.in/wp-content/uploads/2017/03/bookmyshow..png?resize=600%2C228" 
+                     alt="BookMyShow" 
+                     class="brand-logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+           
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="fas fa-home me-1"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="movies.html">
+                            <i class="fas fa-film me-1"></i> Movies
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">
+                            <i class="fas fa-calendar-alt me-1"></i> Events
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="theater.html">
+                            <i class="fas fa-map-marker-alt me-1"></i> Theaters
+                        </a>
+                    </li>
+                </ul>
+                
+               
+                <div class="d-flex align-items-center">
+                    <a href="login.html" class="btn btn-outline-light me-2 px-3 py-2 auth-btn">
+                        <i class="fas fa-sign-in-alt me-1"></i> Sign In
+                    </a>
+                    <a href="register.html" class="btn btn-danger px-3 py-2 auth-btn">
+                        <i class="fas fa-user-plus me-1"></i> Sign Up
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card mb-4">
+                        <div class="card-header bg-danger text-white">
+                            <h4 class="mb-0">Select Showtime</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Avengers: Endgame</h5>
+                            <p class="text-muted">2h 50m • Action, Adventure, Sci-Fi • UA</p>
+                            
+                            <div class="mt-4">
+                                <h6>Select Date</h6>
+                                <div class="date-scroll mb-4">
+                                    <div class="d-flex overflow-auto py-2">
+                                      
+                                        <button class="btn btn-outline-primary date-btn mx-2">Today</button>
+                                        <button class="btn btn-outline-secondary date-btn mx-2">Tomorrow</button>
+                                    
+                                    </div>
+                                </div>
+                                
+                                <h6>Select Theater</h6>
+                                <div class="theater-list">
+                                    <div class="theater-item border-bottom py-3">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h6>PVR Cinemas</h6>
+                                                <p class="text-muted mb-1">Forum Mall, Koramangala</p>
+                                                <small class="text-danger">2D Dolby Atmos</small>
+                                            </div>
+                                            <div class="text-end">
+                                                <small class="d-block text-muted">From ₹180</small>
+                                                <a href="#" class="btn btn-sm btn-danger mt-2">Book Now</a>
+                                            </div>
+                                        </div>
+                                        <div class="showtimes mt-3">
+                                            <a href="#" class="btn btn-outline-dark btn-sm me-2 mb-2">10:00 AM</a>
+                                            <a href="#" class="btn btn-outline-dark btn-sm me-2 mb-2">1:30 PM</a>
+                                            <a href="#" class="btn btn-outline-dark btn-sm me-2 mb-2">4:45 PM</a>
+                                            <a href="#" class="btn btn-outline-dark btn-sm me-2 mb-2">8:00 PM</a>
+                                            <a href="#" class="btn btn-outline-dark btn-sm me-2 mb-2">11:15 PM</a>
+                                        </div>
+                                    </div>
+                                 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card sticky-top" style="top: 20px;">
+                        <div class="card-header bg-light">
+                            <h5 class="mb-0">Booking Summary</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <img src="../img/movie1.jpg" alt="Movie Poster" class="img-fluid rounded" style="max-height: 200px;">
+                            </div>
+                            <h5>Avengers: Endgame</h5>
+                            <ul class="list-unstyled">
+                                <li><strong>Format:</strong> 2D Dolby Atmos</li>
+                                <li><strong>Duration:</strong> 2h 50m</li>
+                                <li><strong>Language:</strong> English</li>
+                            </ul>
+                            <div class="alert alert-info">
+                                Please select a showtime to proceed with booking.
+                            </div>
+                            <button class="btn btn-danger w-100" disabled>Proceed to Book</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5>BookMyShow</h5>
+                    <p>Your one-stop destination for all entertainment needs.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">About Us</a></li>
+                        <li><a href="#" class="text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-white">FAQ</a></li>
+                        <li><a href="#" class="text-white">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Download App</h5>
+                    <div class="app-download">
+                        <a href="#" class="d-block mb-2">
+                            <img src="img/google-play.png" alt="Google Play" class="img-fluid">
+                        </a>
+                        <a href="#">
+                            <img src="img/app-store.png" alt="App Store" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 BookMyShow Clone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

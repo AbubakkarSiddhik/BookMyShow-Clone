@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyShow Clone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i0.wp.com/nasheman.in/wp-content/uploads/2017/03/bookmyshow..png?resize=600%2C228" 
+                     alt="BookMyShow" 
+                     class="brand-logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+           
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="fas fa-home me-1"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="movies.html">
+                            <i class="fas fa-film me-1"></i> Movies
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">
+                            <i class="fas fa-calendar-alt me-1"></i> Events
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="theater.html">
+                            <i class="fas fa-map-marker-alt me-1"></i> Theaters
+                        </a>
+                    </li>
+                </ul>
+                
+               
+                <div class="d-flex align-items-center">
+                    <a href="login.html" class="btn btn-outline-light me-2 px-3 py-2 auth-btn">
+                        <i class="fas fa-sign-in-alt me-1"></i> Sign In
+                    </a>
+                    <a href="register.html" class="btn btn-danger px-3 py-2 auth-btn">
+                        <i class="fas fa-user-plus me-1"></i> Sign Up
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content text-white">
+                <h1 class="display-4 fw-bold">Book Tickets for Movies, Events & More</h1>
+                <p class="lead">Discover the best entertainment options in your city</p>
+                <div class="search-box mt-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control form-control-lg"
+                            placeholder="Search for movies, events, plays, etc.">
+                        <button class="btn btn-danger" type="button">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="fw-bold">Now Showing</h2>
+                <a href="movies.html" class="btn btn-outline-danger">View All</a>
+            </div>
+            <div class="row">
+
+                <div class="col-md-3 mb-4">
+                    <div class="card movie-card h-100">
+                        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/avengers-end-game-et00090482-07-12-2018-06-50-21.jpg" class="card-img-top" alt="Movie Poster">
+                        <div class="card-body">
+                            <h5 class="card-title">Avengers: Endgame</h5>
+                            <p class="card-text text-muted">Action, Adventure, Sci-Fi</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">4.5/5</span>
+                                <a href="booking.html" class="btn btn-sm btn-danger">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-5">
+                <div>
+                    <h2 class="fw-bold display-6 mb-2">Coming Soon</h2>
+                    <p class="text-muted">Discover upcoming movies you'll love</p>
+                </div>
+                <a href="movies.html" class="btn btn-danger px-4 py-2 rounded-pill d-flex align-items-center">
+                    View All <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="https://via.placeholder.com/300x450" class="card-img-top" alt="Movie Poster">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-2">Coming Soon</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-1">The Last Adventure</h5>
+                            <p class="text-muted small mb-2">Action, Adventure</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-light text-dark"><i class="bi bi-calendar me-1"></i> Jun 15</span>
+                                <span class="badge bg-light text-dark"><i class="bi bi-star-fill text-warning me-1"></i> 4.5</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-outline-danger w-100">Notify Me</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="https://via.placeholder.com/300x450" class="card-img-top" alt="Movie Poster">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-2">Coming Soon</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-1">Midnight Secrets</h5>
+                            <p class="text-muted small mb-2">Thriller, Mystery</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-light text-dark"><i class="bi bi-calendar me-1"></i> Jul 2</span>
+                                <span class="badge bg-light text-dark"><i class="bi bi-star-fill text-warning me-1"></i> 4.2</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-outline-danger w-100">Notify Me</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="https://via.placeholder.com/300x450" class="card-img-top" alt="Movie Poster">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-2">Coming Soon</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-1">Summer Love</h5>
+                            <p class="text-muted small mb-2">Romance, Comedy</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-light text-dark"><i class="bi bi-calendar me-1"></i> Jun 28</span>
+                                <span class="badge bg-light text-dark"><i class="bi bi-star-fill text-warning me-1"></i> 4.7</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-outline-danger w-100">Notify Me</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="https://via.placeholder.com/300x450" class="card-img-top" alt="Movie Poster">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-2">Coming Soon</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-1">Space Odyssey</h5>
+                            <p class="text-muted small mb-2">Sci-Fi, Adventure</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-light text-dark"><i class="bi bi-calendar me-1"></i> Jul 15</span>
+                                <span class="badge bg-light text-dark"><i class="bi bi-star-fill text-warning me-1"></i> 4.9</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-outline-danger w-100">Notify Me</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-5">
+                <div>
+                    <h2 class="fw-bold display-6 mb-2">Events & Plays</h2>
+                    <p class="text-muted">Explore exciting live experiences</p>
+                </div>
+                <a href="events.html" class="btn btn-danger px-4 py-2 rounded-pill d-flex align-items-center">
+                    View All <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <div class="position-relative">
+                            <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Event Image" style="height: 200px; object-fit: cover;">
+                            <span class="badge bg-info position-absolute top-0 end-0 m-2">Live Event</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Romeo & Juliet</h5>
+                            <p class="text-muted small mb-3"><i class="bi bi-geo-alt me-1"></i> City Theater, New York</p>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-danger"><i class="bi bi-calendar me-1"></i> May 28, 2023</span>
+                                <span class="text-danger"><i class="bi bi-clock me-1"></i> 7:30 PM</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-dark">Starting at $29</span>
+                                <button class="btn btn-sm btn-danger">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <div class="position-relative">
+                            <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Event Image" style="height: 200px; object-fit: cover;">
+                            <span class="badge bg-warning position-absolute top-0 end-0 m-2">Limited Seats</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Jazz Night</h5>
+                            <p class="text-muted small mb-3"><i class="bi bi-geo-alt me-1"></i> Central Park, Chicago</p>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-danger"><i class="bi bi-calendar me-1"></i> Jun 5, 2023</span>
+                                <span class="text-danger"><i class="bi bi-clock me-1"></i> 8:00 PM</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-dark">Starting at $45</span>
+                                <button class="btn btn-sm btn-danger">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                        <div class="position-relative">
+                            <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Event Image" style="height: 200px; object-fit: cover;">
+                            <span class="badge bg-success position-absolute top-0 end-0 m-2">New</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Magic Show</h5>
+                            <p class="text-muted small mb-3"><i class="bi bi-geo-alt me-1"></i> Grand Theater, LA</p>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-danger"><i class="bi bi-calendar me-1"></i> Jun 12, 2023</span>
+                                <span class="text-danger"><i class="bi bi-clock me-1"></i> 6:00 PM</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-dark">Starting at $35</span>
+                                <button class="btn btn-sm btn-danger">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5>BookMyShow</h5>
+                    <p>Your one-stop destination for all entertainment needs.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                        <li><a href="faq.html" class="text-white">FAQ</a></li>
+                        <li><a href="terms.html" class="text-white">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Download App</h5>
+                    <div class="app-download">
+                        <a href="https://play.google.com/" class="d-block mb-2">
+                            <img src="https://freelogopng.com/images/all_img/1664285914google-play-logo-png.png" alt="Google Play" class="img-fluid" style="height: 36px;
+                            width: auto;
+                            transition: transform 0.3s ease;">
+                        </a>
+                        <a href="https://www.apple.com/in/app-store/">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/1200px-App_Store_%28iOS%29.svg.png" alt="App Store" class="img-fluid" style="height: 36px;
+                            width: auto;
+                            transition: transform 0.3s ease;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 BookMyShow Clone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

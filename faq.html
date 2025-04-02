@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - BookMyShow Clone</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i0.wp.com/nasheman.in/wp-content/uploads/2017/03/bookmyshow..png?resize=600%2C228" 
+                     alt="BookMyShow" 
+                     class="brand-logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+           
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="fas fa-home me-1"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="movies.html">
+                            <i class="fas fa-film me-1"></i> Movies
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">
+                            <i class="fas fa-calendar-alt me-1"></i> Events
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="theater.html">
+                            <i class="fas fa-map-marker-alt me-1"></i> Theaters
+                        </a>
+                    </li>
+                </ul>
+                
+               
+                <div class="d-flex align-items-center">
+                    <a href="login.html" class="btn btn-outline-light me-2 px-3 py-2 auth-btn">
+                        <i class="fas fa-sign-in-alt me-1"></i> Sign In
+                    </a>
+                    <a href="register.html" class="btn btn-danger px-3 py-2 auth-btn">
+                        <i class="fas fa-user-plus me-1"></i> Sign Up
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="faq-hero py-5 bg-light">
+        <div class="container py-5 text-center">
+            <h1 class="display-4 fw-bold mb-3">Frequently Asked Questions</h1>
+            <p class="lead mb-4">Find quick answers to common questions about bookings, payments, and more.</p>
+            <div class="col-lg-6 mx-auto">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control form-control-lg" placeholder="Search FAQs...">
+                    <button class="btn btn-danger" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <a href="#booking" class="card category-card text-decoration-none h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-container bg-danger mb-3">
+                                <i class="fas fa-ticket-alt text-white"></i>
+                            </div>
+                            <h4>Booking Questions</h4>
+                            <p class="text-muted mb-0">Tickets, seats, and reservations</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#payment" class="card category-card text-decoration-none h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-container bg-primary mb-3">
+                                <i class="fas fa-credit-card text-white"></i>
+                            </div>
+                            <h4>Payment Issues</h4>
+                            <p class="text-muted mb-0">Refunds, discounts, and payments</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#account" class="card category-card text-decoration-none h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-container bg-success mb-3">
+                                <i class="fas fa-user-circle text-white"></i>
+                            </div>
+                            <h4>Account Help</h4>
+                            <p class="text-muted mb-0">Login, security, and profiles</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+           
+            <div id="booking" class="mb-5">
+                <h2 class="fw-bold mb-4 border-bottom pb-2">Booking Questions</h2>
+                <div class="accordion" id="bookingAccordion">
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#booking1">
+                                How do I book tickets online?
+                            </button>
+                        </h2>
+                        <div id="booking1" class="accordion-collapse collapse show" data-bs-parent="#bookingAccordion">
+                            <div class="accordion-body">
+                                <p>To book tickets:</p>
+                                <ol>
+                                    <li>Select the movie or event you want to attend</li>
+                                    <li>Choose your preferred date, time, and venue</li>
+                                    <li>Select your seats (for movies and reserved seating events)</li>
+                                    <li>Proceed to payment and complete your booking</li>
+                                    <li>You'll receive a confirmation email with your e-tickets</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#booking2">
+                                Can I cancel or modify my booking?
+                            </button>
+                        </h2>
+                        <div id="booking2" class="accordion-collapse collapse" data-bs-parent="#bookingAccordion">
+                            <div class="accordion-body">
+                                <p>Cancellation and modification policies vary:</p>
+                                <ul>
+                                    <li><strong>Movies:</strong> Cancellation allowed up to 1 hour before showtime with partial refund</li>
+                                    <li><strong>Events:</strong> Depends on organizer's policy (check event details)</li>
+                                    <li><strong>Modifications:</strong> Seat upgrades may be available, date/time changes rarely allowed</li>
+                                </ul>
+                                <p>Visit "My Bookings" in your account to check options.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#booking3">
+                                What is the ticket delivery method?
+                            </button>
+                        </h2>
+                        <div id="booking3" class="accordion-collapse collapse" data-bs-parent="#bookingAccordion">
+                            <div class="accordion-body">
+                                <p>We offer multiple delivery options:</p>
+                                <ul>
+                                    <li><strong>E-Ticket:</strong> Instantly delivered via email and available in "My Bookings"</li>
+                                    <li><strong>Mobile Ticket:</strong> Accessible in our mobile app (recommended for quick entry)</li>
+                                    <li><strong>Box Office Pickup:</strong> Collect at venue with booking ID and ID proof (for some events)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div id="payment" class="mb-5">
+                <h2 class="fw-bold mb-4 border-bottom pb-2">Payment Questions</h2>
+                <div class="accordion" id="paymentAccordion">
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#payment1">
+                                What payment methods do you accept?
+                            </button>
+                        </h2>
+                        <div id="payment1" class="accordion-collapse collapse show" data-bs-parent="#paymentAccordion">
+                            <div class="accordion-body">
+                                <p>We accept various payment options:</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li>Credit/Debit Cards (Visa, Mastercard, Amex, etc.)</li>
+                                            <li>Net Banking</li>
+                                            <li>UPI Payments (Google Pay, PhonePe, Paytm, etc.)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li>Digital Wallets (Paytm, Amazon Pay, etc.)</li>
+                                            <li>BookMyShow Gift Cards</li>
+                                            <li>Cash at Partner Outlets (select locations)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payment2">
+                                How long do refunds take to process?
+                            </button>
+                        </h2>
+                        <div id="payment2" class="accordion-collapse collapse" data-bs-parent="#paymentAccordion">
+                            <div class="accordion-body">
+                                <p>Refund processing times vary by payment method:</p>
+                                <ul>
+                                    <li><strong>Credit/Debit Cards:</strong> 7-10 business days</li>
+                                    <li><strong>Net Banking:</strong> 3-5 business days</li>
+                                    <li><strong>UPI & Wallets:</strong> 1-3 business days</li>
+                                </ul>
+                                <p>Note: The refund timeline begins after the refund is approved, 
+                                which may take 1-2 business days for verification.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payment3">
+                                My payment failed but money was deducted. What should I do?
+                            </button>
+                        </h2>
+                        <div id="payment3" class="accordion-collapse collapse" data-bs-parent="#paymentAccordion">
+                            <div class="accordion-body">
+                                <p>In case of payment failure with amount deduction:</p>
+                                <ol>
+                                    <li>Check your email for a payment confirmation/failure notification</li>
+                                    <li>Wait 2 hours - most payments automatically reverse in this time</li>
+                                    <li>If amount isn't reversed, contact your bank with the transaction details</li>
+                                    <li>If the ticket was booked despite the failure message, 
+                                    check "My Bookings" in your account</li>
+                                    <li>Contact our <a href="contact.html">customer support</a> with transaction details if issue persists</li>
+                                </ol>
+                                <p>Note: The refund process may take 7-10 business days.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="account">
+                <h2 class="fw-bold mb-4 border-bottom pb-2">Account Questions</h2>
+                <div class="accordion" id="accountAccordion">
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#account1">
+                                How do I reset my password?
+                            </button>
+                        </h2>
+                        <div id="account1" class="accordion-collapse collapse show" data-bs-parent="#accountAccordion">
+                            <div class="accordion-body">
+                                <p>To reset your password:</p>
+                                <ol>
+                                    <li>Go to the <a href="login.html">login page</a></li>
+                                    <li>Click "Forgot Password"</li>
+                                    <li>Enter the email address or mobile number associated with your account</li>
+                                    <li>Check your email or phone for a password reset link</li>
+                                    <li>Click the link and create a new password</li>
+                                </ol>
+                                <p>If you don't receive the reset email, check your spam folder or 
+                                <a href="contact.html">contact support</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#account2">
+                                How do I update my account information?
+                            </button>
+                        </h2>
+                        <div id="account2" class="accordion-collapse collapse" data-bs-parent="#accountAccordion">
+                            <div class="accordion-body">
+                                <p>To update your account details:</p>
+                                <ol>
+                                    <li>Log in to your account</li>
+                                    <li>Click on your profile picture in the top right corner</li>
+                                    <li>Select "Account Settings"</li>
+                                    <li>Update your personal information, email, or phone number</li>
+                                    <li>Click "Save Changes"</li>
+                                </ol>
+                                <p>Note: Changing your email or phone number may require verification 
+                                through a one-time password (OTP).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#account3">
+                                Is my payment information secure?
+                            </button>
+                        </h2>
+                        <div id="account3" class="accordion-collapse collapse" data-bs-parent="#accountAccordion">
+                            <div class="accordion-body">
+                                <p>Yes, we take security very seriously:</p>
+                                <ul>
+                                    <li>All payment transactions are encrypted with 256-bit SSL encryption</li>
+                                    <li>We are PCI-DSS compliant (Payment Card Industry Data Security Standard)</li>
+                                    <li>We don't store your full credit card details on our servers</li>
+                                    <li>Two-factor authentication is available for account security</li>
+                                    <li>Regular security audits are conducted to protect your data</li>
+                                </ul>
+                                <p>For additional security, we recommend:</p>
+                                <ul>
+                                    <li>Using strong, unique passwords</li>
+                                    <li>Not sharing your account credentials</li>
+                                    <li>Logging out after each session on shared devices</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="py-5 bg-light">
+        <div class="container text-center py-4">
+            <h2 class="fw-bold mb-4">Still Need Help?</h2>
+            <p class="lead mb-4">Can't find the answer you're looking for? Our support team is ready to help.</p>
+            <a href="contact.html" class="btn btn-danger btn-lg px-4">Contact Support</a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5>BookMyShow</h5>
+                    <p>Your one-stop destination for all entertainment needs.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                        <li><a href="faq.html" class="text-white">FAQ</a></li>
+                        <li><a href="terms.html" class="text-white">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Download App</h5>
+                    <div class="app-download">
+                        <a href="https://play.google.com/" class="d-block mb-2">
+                            <img src="https://freelogopng.com/images/all_img/1664285914google-play-logo-png.png" alt="Google Play" class="img-fluid" style="height: 36px;
+                            width: auto;
+                            transition: transform 0.3s ease;">
+                        </a>
+                        <a href="https://www.apple.com/in/app-store/">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/1200px-App_Store_%28iOS%29.svg.png" alt="App Store" class="img-fluid" style="height: 36px;
+                            width: auto;
+                            transition: transform 0.3s ease;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 BookMyShow Clone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
